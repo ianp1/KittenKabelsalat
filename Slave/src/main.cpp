@@ -60,6 +60,7 @@ bool connectorPinStable[CONNECTOR_PIN_COUNT];
 int connectorReadCount = 0;
 
 void setup() {
+  Serial.begin(115200);
   initMasterConnection();
   
   for (int i = 0; i < CONNECTOR_PIN_COUNT; i++) {
