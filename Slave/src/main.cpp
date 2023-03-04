@@ -60,15 +60,14 @@ bool connectorPinStable[CONNECTOR_PIN_COUNT];
 int connectorReadCount = 0;
 
 void setup() {
-  //initMasterConnection();
-
+  initMasterConnection();
+  
   for (int i = 0; i < CONNECTOR_PIN_COUNT; i++) {
     connectorPinValues[i] = 0;
     connectorPinReading[i] = 0;
     connectorPinLastReading[i] = 0;
   }
 
-  Serial.begin(115200);// Optional um dinge auszugeben, beim Debuggen
 }
 
 void loop() {
@@ -129,7 +128,6 @@ void loop() {
 
     connectorReadCount = 0;
   }
-  /*
   while (endByte == END_RUNNING) {
     digitalWrite(LED_BUILTIN, LOW);
     delay(1000);
@@ -153,5 +151,5 @@ void loop() {
     digitalWrite(LED_BUILTIN, HIGH);
     delay(100);
     // Win Animation anzeigen
-  }*/
+  }
 }
