@@ -30,16 +30,16 @@ volatile int seed = 0;    // Der Seed wird bei der Initialisierung übertragen u
 
 
 Connector connectors[CONNECTOR_COUNT] = {
-  Connector(GPIO_NUM_27, 0),
-  Connector(GPIO_NUM_25, 1),
-  Connector(GPIO_NUM_32, 2),
-  Connector(GPIO_NUM_4, 3),
-  Connector(GPIO_NUM_26, 4),
-  Connector(GPIO_NUM_35, 5),
-  Connector(GPIO_NUM_33, 6),
-  Connector(GPIO_NUM_34, 7),
-  Connector(GPIO_NUM_13, 8),
-  Connector(GPIO_NUM_36, 9)
+  Connector(GPIO_NUM_36, 0),
+  Connector(GPIO_NUM_13, 1),
+  Connector(GPIO_NUM_34, 2),
+  Connector(GPIO_NUM_33, 3),
+  Connector(GPIO_NUM_35, 4),
+  Connector(GPIO_NUM_26, 5),
+  Connector(GPIO_NUM_4, 6),
+  Connector(GPIO_NUM_32, 7),
+  Connector(GPIO_NUM_25, 8),
+  Connector(GPIO_NUM_27, 9)
 };
 
 void setup() {

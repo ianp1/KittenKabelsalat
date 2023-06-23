@@ -64,7 +64,8 @@ class Connector {
                 this -> lastEvaluatedValue = this -> evaluatedValue;
 
                 double currentValue = ((valueSum/(double)(readCount)) - 150.0) / 302.0;
-                if (currentValue > -0.03) {
+                
+                if (currentValue > -0.1) {
                     evaluatedValue = (int) round(currentValue);
                 } else {
                     evaluatedValue = -1;
